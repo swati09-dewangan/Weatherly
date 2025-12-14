@@ -57,7 +57,7 @@ export default function SearchBox({ updateInfo }) {
   return (
     <div className="SearchBox">
       <form onSubmit={handleSubmit}>
-        <TextField
+        <TextField 
           id="city"
           label="City Name"
           variant="outlined"
@@ -67,7 +67,7 @@ export default function SearchBox({ updateInfo }) {
         />
         <br />
         <br />
-        <Button variant="contained" type="submit">
+        <Button variant="contained" type="submit" className="btn btn-success" >
           Search
         </Button>
         {error && <p style={{ color: "red" }}>⚠️ No such place exists!</p>}
